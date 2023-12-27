@@ -1,0 +1,49 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.saravanan {
+    position: relative;
+    width: 30em;
+    height: 30em;
+    background: radial-gradient(circle at 30% 100%, #f9ed69 0%, #ee653d 25%, #d42e81 50%, #a237b6 75%, #3e5fbc 100%);
+    box-shadow: -.3em .5em 40px rgba(0, 0, 0, .5);
+    border-radius: 6em;
+}
+
+.line {
+    position: absolute;
+    width: 18em;
+    height: 18em;
+    border: 1.8em solid #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6em;
+}
+
+.line::before {
+    position: absolute;
+    content: "";
+    width: 6em;
+    height: 6em;
+    border: 1.8em solid #fff;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6em;
+}
+
+.line::after {
+    position: absolute;
+    content: "";
+    width: 2.2em;
+    height: 2.2em;
+    background-color: #fff;
+    top: 2em;
+    right: 2em;
+    border-radius: 50%;
+}
